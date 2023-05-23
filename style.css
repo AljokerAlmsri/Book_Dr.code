@@ -1,8 +1,12 @@
 
-    body {
-      margin: 0;
-      padding: 0;
-    }
+    
+        body {
+  display: flex;
+  align-items: center; /* للتوسيط العمودي */
+  justify-content: center; /* للتوسيط الأفقي */
+  min-height: 100vh; /* لجعل ارتفاع العنصر body يمتد على الشاشة بأكملها */
+}
+    
     
     header {
       background-color: #212429;
