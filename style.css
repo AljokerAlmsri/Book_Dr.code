@@ -2,9 +2,11 @@
     
         body {
   display: flex;
-  align-items: center; /* للتوسيط العمودي */
-  justify-content: center; /* للتوسيط الأفقي */
-  min-height: 100vh; /* لجعل ارتفاع العنصر body يمتد على الشاشة بأكملها */
+  align-items: center;
+  justify-content: center; 
+  min-height: 100vh; 
+      margin: 0;
+      padding: 0;
 }
     
     
