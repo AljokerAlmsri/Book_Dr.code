@@ -3,8 +3,8 @@
     
     // استدعاء البيانات من ملف JSON
 const urlParams = new URLSearchParams(window.location.search);
-const year = urlParams.get('year');
-const semester = urlParams.get('semester');
+const year = urlParams.post('year');
+const semester = urlParams.post('semester');
 const fileName = `year${year}semester${semester}.json`;
 
 fetch(fileName)
